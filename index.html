@@ -22,10 +22,11 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 
-  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/flights.js"></script>
+  <script type="text/javascript" src="js/clock.js"></script>
 </head>
 
-<body onload="initialiseTable()">
+<body>
 
   <!-- Add your site or application content here -->
   <div class="flightBoard">
@@ -36,7 +37,7 @@
 
     <table id="flights">
       <tr class="headers">
-        <th>TIJD </th>
+        <th>TIJD</th>
         <th>BESTEMMING</th>
         <th>VLUCHT</th>
         <th>MAATSCHAPPIJ</th>
@@ -45,17 +46,23 @@
     </table>
 
     <div class="bottomContainer">
-      <div class="blue"></div>
+      <div class="blue">
+        <div id="clock">00:00:00</div>
+      </div>
+
       <div class="gray"></div>
 
       <div class="textContent">
         <img class="image" src = "img/schiphol.svg" alt="My Happy SVG"/>
         <div class="vertrek">VERTREK</div>
       </div>
-
     </div>
 
   </div>
+
+<script>
+  window.addEventListener("load", () => { initializeTable(); startClock(); }, true);
+</script>
 
 </body>
 

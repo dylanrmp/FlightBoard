@@ -24,7 +24,7 @@ table tr {
 }
 
 
-.headers {
+table .headers {
   height: 45px;
   font-size: 28px;
   background-color: #004f93;
@@ -32,8 +32,8 @@ table tr {
 }
 
 .topContainer .gray {
-  width: 100%;
-  height: 20px;
+  display: flex;
+  height: 25px;
   background-color: #ded6cb;
 }
 
@@ -44,12 +44,20 @@ table tr {
 }
 
 .bottomContainer .blue {
-  height: 35px;
+  display: flex;
+  height: 45px;
   background-color: #004f93;
 }
 
+.bottomContainer .blue #clock {
+  align-self: center;
+  padding-left: 20px;
+  font-size: 23px;
+  color: white;
+}
+
 .bottomContainer .gray {
-  height: 20px;
+  height: 25px;
   background-color: #ded6cb;
 }
 

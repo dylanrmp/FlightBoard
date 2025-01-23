@@ -11,7 +11,7 @@ const flightEntries = [
   { time: "16:20", destination: "dubai (dxb)", flight: "af 8423", airline: "air france", status: "vertrokken"}
 ];
 
-initialiseTable = () => {
+initializeTable = () => {
   const table = document.getElementById("flights");
 
   for (let i = 0; i < flightEntries.length; i++) {
