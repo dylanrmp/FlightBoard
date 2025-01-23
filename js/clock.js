@@ -17,4 +17,8 @@ addZero = (time) => {
     time = "0" + time;
     return time;
   }
+
+  else {
+    return time;
+  }
 }
