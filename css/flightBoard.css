@@ -99,3 +99,24 @@ table .headers {
   color: #004f93;
 }
 
+.bottomContainer .blue #pageNumbers {
+  display: flex;
+  width: 200px;
+  height: 55px;
+  margin-top: 5px;
+  margin-left: 500px;
+  justify-content: space-evenly;
+}
+
+#pageNumbers div {
+  display: flex;
+  background-color: #ded6cb;
+  font-size: x-large;
+  color: black;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+

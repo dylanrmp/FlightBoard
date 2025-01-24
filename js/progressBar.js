@@ -1,6 +1,5 @@
-startProgressBar = (duration, pauseInterval) => {
+startProgressBar = (duration, pauseTime) => {
   const indicator = document.getElementById("indicator");
-
   indicator.style.transition = "width 5s linear";
   indicator.style.width = "100%";
 
@@ -9,8 +8,8 @@ startProgressBar = (duration, pauseInterval) => {
     indicator.style.width = "0%";
 
     setTimeout( () => {
-      startProgressBar(duration, pauseInterval);
-    }, pauseInterval);
+      startProgressBar(duration, pauseTime);
+    }, pauseTime);
 
   }, duration);
 }

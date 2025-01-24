@@ -49,6 +49,7 @@
     <div class="bottomContainer">
       <div class="blue">
         <div id="clock">00:00:00</div>
+        <div id="pageNumbers"></div>
       </div>
 
       <div class="gray">
@@ -66,7 +67,13 @@
   </div>
 
 <script>
-  window.addEventListener("load", () => { initializeTable(); startClock(); startProgressBar(5000, 1000); }, true);
+  window.addEventListener("load", () => {
+    updateTable(0);
+    renderPageButtons();
+    startClock();
+    startProgressBar(5000, 1000);
+    setInterval(nextPage, 6000);
+  }, true);
 </script>
 
 </body>
