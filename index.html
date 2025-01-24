@@ -25,6 +25,7 @@
   <script type="text/javascript" src="js/flights.js"></script>
   <script type="text/javascript" src="js/clock.js"></script>
   <script type="text/javascript" src="js/progressBar.js"></script>
+  <script type="text/javascript" src="js/colors.js" ></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
     </div>
 
     <table id="flights">
-      <tr class="headers">
+      <tr id="headers">
         <th>TIJD</th>
         <th>BESTEMMING</th>
         <th>VLUCHT</th>
@@ -47,7 +48,7 @@
     </table>
 
     <div class="bottomContainer">
-      <div class="blue">
+      <div id="blue">
         <div id="clock">00:00:00</div>
         <div id="pageNumbers"></div>
       </div>
@@ -68,6 +69,12 @@
 
 <script>
   window.addEventListener("load", () => {
+    setHeaderColor("#004f93");
+    setHeaderTextColor("white");
+    setSpacerColor("#ded6cb");
+    setRowColor("red");
+    setRowTextColor("black")
+
     updateTable(0);
     renderPageButtons();
     startClock();

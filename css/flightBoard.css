@@ -24,7 +24,7 @@ table tr {
 }
 
 
-table .headers {
+table #headers {
   height: 45px;
   font-size: 28px;
   background-color: #004f93;
@@ -43,13 +43,13 @@ table .headers {
   bottom: 0;
 }
 
-.bottomContainer .blue {
+.bottomContainer #blue {
   display: flex;
   height: 45px;
   background-color: #004f93;
 }
 
-.bottomContainer .blue #clock {
+.bottomContainer #blue #clock {
   align-self: center;
   padding-left: 20px;
   font-size: 23px;
@@ -99,7 +99,7 @@ table .headers {
   color: #004f93;
 }
 
-.bottomContainer .blue #pageNumbers {
+.bottomContainer #blue #pageNumbers {
   display: flex;
   width: 200px;
   height: 55px;
