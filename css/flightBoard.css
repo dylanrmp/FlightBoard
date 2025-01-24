@@ -57,8 +57,25 @@ table .headers {
 }
 
 .bottomContainer .gray {
+  display: flex;
   height: 25px;
   background-color: #ded6cb;
+}
+
+.bottomContainer .gray .progressBar {
+  height: 6px;
+  width: 800px;
+  align-self: center;
+  margin: auto;
+  font-size: 30px;
+}
+
+.bottomContainer .gray .progressBar #indicator {
+  width: 0%;
+  transition: width 5s linear;
+  height: 100%;
+  background-color: #16c516;
+  border-radius: 10px;
 }
 
 .bottomContainer .textContent {
