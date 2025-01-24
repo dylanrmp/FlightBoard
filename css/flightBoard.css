@@ -16,6 +16,15 @@ table th, td {
   padding-left: 20px;
 }
 
+table span {
+  float: right;
+}
+
+/*table th:not(:first-child) {*/
+/*  border-left-style: solid;*/
+/*  border-left-width: 1px;*/
+/*}*/
+
 table tr {
   border-top-width: 1px;
   border-top-style: solid;
