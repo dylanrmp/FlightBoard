@@ -1,14 +1,7 @@
 startClock = () => {
-  const today = new Date();
-  let hours = today.getHours();
-  let minutes = today.getMinutes();
-  let seconds = today.getSeconds();
+  const currentDate = new Date();
+  document.getElementById("clock").innerText = currentDate.toLocaleTimeString();
 
-  hours = addZero(hours);
-  minutes = addZero(minutes);
-  seconds = addZero(seconds);
-
-  document.getElementById("clock").innerText = `${hours}:${minutes}:${seconds}`;
   setTimeout(startClock, 1000);
 }
 
