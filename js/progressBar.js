@@ -2,7 +2,7 @@ startProgressBar = (duration, pauseTime) => {
   const indicator = document.getElementById("indicator");
 
   // Enable the transition / fill animation
-  indicator.style.transition = "width 5s linear";
+  indicator.style.transition = `width ${duration}ms linear`;
   indicator.style.width = "100%";
 
   // Call this function after the provided duration.
