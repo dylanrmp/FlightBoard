@@ -40,6 +40,7 @@ currentPage = 0; // usually you'd fetch this from a web api aswell
 updateTable = (pageNumber) => {
   const table = document.getElementById("flights");
 
+  // Get the entries for the given  page
   const page = flightEntries[pageNumber];
 
   // Clear the current table
